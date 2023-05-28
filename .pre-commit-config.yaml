@@ -1,0 +1,29 @@
+# To install the dependencies for this file:
+# 1) pip install pre-commit
+#   (really, "sudo python3 -m pip install pre-commit")
+#
+# 2) pre-commit install --allow-missing-config
+#
+# yamllint checks this .pre-commit-config file as well
+---
+repos:
+  # ARM: python venv fails
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.32.0
+    hooks:
+      - id: yamllint
+        args: [
+          '-d',
+          '{extends: relaxed, rules: {line-length: {max: 200}}}'
+        ]
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-json
+      - id: no-commit-to-branch
+      - id: trailing-whitespace
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.18.3
+    hooks:
+      - id: check-github-workflows
+      - id: check-renovate

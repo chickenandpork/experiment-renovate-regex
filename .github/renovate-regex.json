@@ -1,0 +1,50 @@
+{
+  "aws_cli": {
+    "renovate_datasource": "github-tags",
+    "renovate_depname": "aws/aws-cli",
+    "renovate_versioning": "semver",
+    "sha256": "f718012d21871837e3c62260e48a320767f3bbda",
+    "version": "2.11.23"
+  },
+  "aws_lbc": {
+    "helm_repository": "https://aws.github.io/eks-charts",
+    "renovate_datasource": "helm",
+    "renovate_depname": "aws-load-balancer-controller",
+    "renovate_versioning": "semver",
+    "sha256": "32ab2fae8a228249020db4d3306617e7f2439a8e",
+    "version": "1.5.3"
+  },
+  "azure_cli": {
+    "renovate_datasource": "github-releases",
+    "renovate_depname": "Azure/azure-cli",
+    "renovate_versioning": "semver",
+    "sha256": "32ab2fae8a228249020db4d3306617e7f2439a8e",
+    "version": "azure-cli-2.45.0"
+  },
+  "bazel_remote_cache": {
+    "renovate_datasource": "helm",
+    "renovate_depname": "bazel-remote",
+    "renovate_versioning": "semver",
+    "version": "0.0.4"
+  },
+  "pytorch": {
+    "renovate_datasource": "docker",
+    "renovate_depname": "pytorch/pytorch",
+    "sha256": "sha256:1e26efd426b0fecbfe7cf3d3ae5003fada6ac5a76eddc1e042857f5d049605ee",
+    "version": "1.13.1-cuda11.6-cudnn8-runtime"
+  },
+  "terraform": {
+    "renovate_datasource": "github-releases",
+    "renovate_depname": "hashicorp/terraform",
+    "renovate_versioning": "semver",
+    "sha256": "6c2c6cfa1b55bd6ff4cf4e26ef86d8d7ab0465ec",
+    "version": "v1.4.6"
+  },
+  "weaviate_helm": {
+    "renovate_datasource": "github-releases",
+    "renovate_depname": "weaviate/weaviate-helm",
+    "renovate_versioning": "semver",
+    "sha256": "204f5545ce02999e215a6d8dcb7d9d17e54692fe",
+    "version": "v16.3.0"
+  }
+}
