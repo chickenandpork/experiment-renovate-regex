@@ -12,7 +12,7 @@
     "renovate_depname": "aws-load-balancer-controller",
     "renovate_versioning": "semver",
     "sha256": "32ab2fae8a228249020db4d3306617e7f2439a8e",
-    "version": "1.5.3"
+    "version": "1.4.8"
   },
   "azure_cli": {
     "renovate_datasource": "github-releases",
