@@ -10,8 +10,6 @@
     "helm_repository": "https://aws.github.io/eks-charts",
     "renovate_datasource": "helm",
     "renovate_depname": "aws-load-balancer-controller",
-    "renovate_versioning": "semver",
-    "sha256": "32ab2fae8a228249020db4d3306617e7f2439a8e",
     "version": "1.4.8"
   },
   "azure_cli": {
@@ -22,9 +20,15 @@
     "version": "azure-cli-2.45.0"
   },
   "bazel_remote_cache": {
+    "helm_repository": "https://slamdev.github.io/helm-charts",
     "renovate_datasource": "helm",
     "renovate_depname": "bazel-remote",
-    "renovate_versioning": "semver",
+    "version": "0.0.4"
+  },
+  "metrics_server": {
+    "helm_repository": "https://kubernetes-sigs.github.io/metrics-server",
+    "renovate_datasource": "helm",
+    "renovate_depname": "metrics-server",
     "version": "0.0.4"
   },
   "pytorch": {
