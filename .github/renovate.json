@@ -3,6 +3,18 @@
   "extends": [
     "config:base"
   ],
+  "packageRules": [
+    {
+      "enabled": true,
+      "matchManagers": [
+        "bazel"
+      ]
+    },
+    {
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge": true
+    }
+  ],
   "regexManagers": [
     {
       "fileMatch": ["renovate-regex.json$"],
