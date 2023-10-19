@@ -23,7 +23,7 @@
     "helm_repository": "https://slamdev.github.io/helm-charts",
     "renovate_datasource": "helm",
     "renovate_depname": "bazel-remote",
-    "version": "0.0.4"
+    "version": "0.0.6"
   },
   "metrics_server": {
     "helm_repository": "https://kubernetes-sigs.github.io/metrics-server",
