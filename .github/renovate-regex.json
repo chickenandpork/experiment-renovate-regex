@@ -48,7 +48,7 @@
     "renovate_datasource": "github-releases",
     "renovate_depname": "weaviate/weaviate-helm",
     "renovate_versioning": "semver",
-    "sha256": "0336163a3ef19eed68e39552d131cbf74021e9db",
-    "version": "v16.8.0"
+    "sha256": "537a5de37b2fdf22f26a101a071b4186b699a80c",
+    "version": "v16.8.1"
   }
 }
