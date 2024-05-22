@@ -41,8 +41,8 @@
     "renovate_datasource": "github-releases",
     "renovate_depname": "hashicorp/terraform",
     "renovate_versioning": "semver",
-    "sha256": "6b949e785850c69caa4c8723305a57980c43109c",
-    "version": "v1.8.3"
+    "sha256": "401065107869f3ccbfe23fee39ff285102344d8e",
+    "version": "v1.8.4"
   },
   "weaviate_helm": {
     "renovate_datasource": "github-releases",
