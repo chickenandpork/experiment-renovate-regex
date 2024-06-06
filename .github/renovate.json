@@ -5,27 +5,23 @@
   ],
   "packageRules": [
     {
+      "automerge": true,
       "enabled": true,
       "matchManagers": [
         "bazel"
-      ]
-    },
-    {
-      "matchUpdateTypes": ["patch", "minor"],
-      "automerge": true
+      ],
+      "matchUpdateTypes": ["patch", "minor"]
     }
   ],
   "regexManagers": [
     {
       "fileMatch": ["renovate-regex.json$"],
       "matchStrings": [
-          "\"renovate_datasource\": \"(?<datasource>.*?)\",\\s    \"renovate_depname\": \"(?<depName>.*?)\",\\s(    \"renovate_versioning\": \"(?<versioning>.*?)\",\\s)?    \"sha256\": \"(?<currentDigest>.*?)\",\\s    \"version\": \"(?<currentValue>.*?)\"",
-          "\"helm_repository\": \"(?<registryUrl>.*?)\",\\s    \"renovate_datasource\": \"(?<datasource>.*?)\",\\s    \"renovate_depname\": \"(?<depName>.*?)\",\\s(    \"renovate_versioning\": \"(?<versioning>.*?)\",\\s)?    \"version\": \"(?<currentValue>.*?)\""
+        "\"renovate_datasource\": \"(?<datasource>.*?)\",\\s    \"renovate_depname\": \"(?<depName>.*?)\",\\s(    \"renovate_versioning\": \"(?<versioning>.*?)\",\\s)?    \"sha256\": \"(?<currentDigest>.*?)\",\\s    \"version\": \"(?<currentValue>.*?)\"",
+        "\"helm_repository\": \"(?<registryUrl>.*?)\",\\s    \"renovate_datasource\": \"(?<datasource>.*?)\",\\s    \"renovate_depname\": \"(?<depName>.*?)\",\\s(    \"renovate_versioning\": \"(?<versioning>.*?)\",\\s)?    \"version\": \"(?<currentValue>.*?)\""
       ],
       "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver-coerced{{/if}}"
     }
   ],
   "reviewers": [ "@chickenandpork" ]
 }
-
-
