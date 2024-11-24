@@ -10,7 +10,7 @@
     "helm_repository": "https://aws.github.io/eks-charts",
     "renovate_datasource": "helm",
     "renovate_depname": "aws-load-balancer-controller",
-    "version": "1.10.0"
+    "version": "1.10.1"
   },
   "azure_cli": {
     "renovate_datasource": "github-releases",
