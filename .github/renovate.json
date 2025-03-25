@@ -3,7 +3,13 @@
   "extends": [
     "config:base"
   ],
+  "enabledManagers": ["generic"],
   "packageRules": [
+    {
+      "matchManagers": ["generic"],
+      "matchFiles": ["multitool.lock.json"],
+      "matchObjectExpressions": ["binaries.[*]"]
+    },
     {
       "automerge": true,
       "enabled": true,
