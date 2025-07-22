@@ -29,7 +29,7 @@
     "helm_repository": "https://kubernetes-sigs.github.io/metrics-server",
     "renovate_datasource": "helm",
     "renovate_depname": "metrics-server",
-    "version": "3.12.2"
+    "version": "3.13.0"
   },
   "pytorch": {
     "renovate_datasource": "docker",
