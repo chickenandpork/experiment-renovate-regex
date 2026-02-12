@@ -9,7 +9,6 @@ on:
   push:
 
 jobs:
-    runs-on: ubuntu-latest
-    container: ghcr.io/actions/actions-runner:latest
-    steps:
-      - run: true  # no-op to pass CI and automerge
+  runs-on: ubuntu-latest
+  steps:
+    - run: true  # no-op to pass CI and automerge
