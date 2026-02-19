@@ -9,6 +9,7 @@ on:
   push:
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - run: true  # no-op to pass CI and automerge
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - run: true  # no-op to pass CI and automerge
