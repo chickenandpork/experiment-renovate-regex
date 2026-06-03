@@ -3,8 +3,8 @@
     "renovate_datasource": "github-tags",
     "renovate_depname": "aws/aws-cli",
     "renovate_versioning": "semver",
-    "sha256": "f40776aba89e3d5074f3bdc3732656082dcc74b9",
-    "version": "2.34.59"
+    "sha256": "700d81df5ea7852435a8dbdcb3f744a8dc9936cc",
+    "version": "2.34.60"
   },
   "aws_lbc": {
     "helm_repository": "https://aws.github.io/eks-charts",
