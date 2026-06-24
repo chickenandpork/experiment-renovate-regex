@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:recommended"
   ],
   "packageRules": [
     {
@@ -9,18 +9,16 @@
       "enabled": true,
       "matchManagers": [
         "bazel",
-        "regex"
+        "custom.regex"
       ],
       "matchUpdateTypes": ["patch", "minor"]
     }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
-      "fileMatch": ["renovate-regex.json$"],
-      "matchStrings": [
-        "\"renovate_datasource\": \"(?<datasource>.*?)\",\\s    \"renovate_depname\": \"(?<depName>.*?)\",\\s(    \"renovate_versioning\": \"(?<versioning>.*?)\",\\s)?    \"sha256\": \"(?<currentDigest>.*?)\",\\s    \"version\": \"(?<currentValue>.*?)\"",
-        "\"helm_repository\": \"(?<registryUrl>.*?)\",\\s    \"renovate_datasource\": \"(?<datasource>.*?)\",\\s    \"renovate_depname\": \"(?<depName>.*?)\",\\s(    \"renovate_versioning\": \"(?<versioning>.*?)\",\\s)?    \"version\": \"(?<currentValue>.*?)\""
-      ],
+      "customType": "regex",
+      "managerFilePatterns": ["/renovate-regex.json$/"],
+      "matchStrings": ["\"renovate_datasource\": \"(?<datasource>.*?)\",\\s    \"renovate_depname\": \"(?<depName>.*?)\",\\s(    \"renovate_versioning\": \"(?<versioning>.*?)\",\\s)?    \"sha256\": \"(?<currentDigest>.*?)\",\\s    \"version\": \"(?<currentValue>.*?)\"", "\"helm_repository\": \"(?<registryUrl>.*?)\",\\s    \"renovate_datasource\": \"(?<datasource>.*?)\",\\s    \"renovate_depname\": \"(?<depName>.*?)\",\\s(    \"renovate_versioning\": \"(?<versioning>.*?)\",\\s)?    \"version\": \"(?<currentValue>.*?)\""],
       "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver-coerced{{/if}}"
     }
   ],
